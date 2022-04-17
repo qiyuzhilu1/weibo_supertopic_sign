@@ -1,7 +1,8 @@
 # This is a workflow to do the weibo supertopic sign tasks according to Github Actions
 name: Weibo Supertopic Sign
-on: 
-  push
+    on: 
+        schedule: 
+          - cron: '0 0 8 * *' # 北京时间 8:00 am
     
 jobs:
   build:
